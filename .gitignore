@@ -1,0 +1,15 @@
+# 各自の設定（APIキーは %APPDATA% に暗号化して保存するので、ここには置かない）
+config/config.json
+config/profiles/*.profile.json
+!config/profiles/example.profile.json
+
+# 会社の勤怠Excel（誤ってアップロードしないよう二重に除外）
+workbook/*
+!workbook/README.md
+*.xls
+*.xlsm
+*.xlsx
+
+# 出来上がったファイルとログ
+output/
+logs/

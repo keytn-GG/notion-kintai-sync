@@ -1,0 +1,17 @@
+{
+  "_説明": "各自の設定の見本。config.json という名前でコピーして値を書き換える（config.json はGitで管理しない）",
+  "dataSourceId": "ここに timecard.db のデータソースIDを書く",
+  "template": "workbook\\勤怠.xls",
+  "profile": "example",
+  "outputDir": "output",
+  "outputName": "kintai_{yyyy}{MM}",
+  "employeeNo": "1234",
+  "name": "テスト 太郎",
+  "project": "プロジェクト名",
+  "previousMonthDays": 3,
+  "idleMinutes": 3,
+  "forceConfirmDay": 20,
+  "confirmSeconds": 30,
+  "activeHours": "07:00-24:00",
+  "lastDayAlertHour": 22
+}

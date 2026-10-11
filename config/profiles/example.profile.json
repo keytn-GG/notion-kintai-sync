@@ -1,0 +1,34 @@
+{
+  "_説明": "勤怠Excelの書式の設定の見本（値は架空）。会社用の設定は社内で配布し、Gitでは管理しない",
+  "sheet": "Sheet1",
+  "yearCell": "B4",
+  "monthCell": "B5",
+  "firstDayRow": 9,
+  "dowColumn": "C",
+  "inColumn": "F",
+  "outColumn": "G",
+  "lateNightStart": "22:00",
+  "initialCells": [
+    { "cell": "F6", "phase": "before", "type": "time",   "value": "{regularStart}" },
+    { "cell": "G6", "phase": "before", "type": "time",   "value": "{regularEnd}" },
+    { "cell": "H6", "phase": "before", "type": "time",   "value": "{regularEnd}" },
+    { "cell": "I6", "phase": "before", "type": "time",   "value": "{lateNightStart}" },
+    { "cell": "E2", "phase": "after",  "type": "number", "value": "{employeeNo}" },
+    { "cell": "H2", "phase": "after",  "type": "text",   "value": "{name}" },
+    { "cell": "M2", "phase": "after",  "type": "text",   "value": "{project}" }
+  ],
+  "dateSetup": {
+    "buttonName": "cmdExample",
+    "buttonText": "Setup",
+    "formTitle": "Setup",
+    "formClass": "ThunderDFrame",
+    "startButton": "Start",
+    "startKeys": "{TAB 10}{ENTER}",
+    "startRelX": 0.5,
+    "startRelY": 0.9,
+    "confirmTitle": "Confirm",
+    "confirmClass": "#32770",
+    "okButton": "OK",
+    "timeoutSec": 60
+  }
+}
